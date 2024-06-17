@@ -16,7 +16,7 @@ public class ReconController {
     ReconService reconService;
 
     @PostMapping("/identity")
-    public IdentityResponseDto saveIdentityRequest(@Valid @RequestBody IdentityRequestDto identityRequestDto) {
+    public IdentityResponseDto saveIdentityRequest(@RequestBody IdentityRequestDto identityRequestDto) {
         return reconService.saveIdentityRequest(identityRequestDto);
     }
 }
